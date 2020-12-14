@@ -1,0 +1,93 @@
+﻿@model BeeKawaii.Models.ProductoHechoAMano
+
+
+
+<h2>Producto Hecho A Mano</h2>
+<style>
+    .responsive {
+        width: 100%;
+        height: auto;
+    }
+</style>
+<div class="container" id="product-section">
+    <div class="row">
+        <div class="col-md-6">
+
+            @switch (Model.Tipo.ToString())
+            {
+            case "Peluche":
+            <text>
+                <img src="~/Imagenes/ConejoNejo.jpg" class="responsive" alt="Responsive image">
+            </text>
+
+            break;
+            case "Separador":
+            <text>
+                <img src="~/Imagenes/Separadores.jpg" class="responsive" alt="Responsive image">
+            </text>
+            break;
+            case "Gorro":
+            <text>
+                <img src="~/Imagenes/Gorro.jpg" class="responsive" alt="Responsive image">
+            </text>
+            break;
+            default:
+            <img src="~/Imagenes/ConejoNejo.jpg" class="responsive" alt="Responsive image">
+            break;
+            }
+
+
+        </div>
+        <div class="col-md-6">
+
+
+            <h1>@Html.DisplayFor(model => model.Nombre)</h1>
+
+            <h4> @Html.DisplayFor(model => model.Caracteristicas)</h4>
+
+            <h5>Material: @Html.DisplayFor(model => model.Material)</h5>
+
+            <dt>
+                Precio
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PrecioVenta) $
+            </dd>
+            <div>
+
+                <hr />
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Tipo)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Tipo)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Tamaño)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Tamaño)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.TiempoRealización)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.TiempoRealización)
+                    </dd>
+                </dl>
+            </div>
+
+        </div>
+    </div><!-- end row -->
+</div><!-- end container -->
+
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,111 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+<!-- Section: Contact v.1 -->
+<section class="my-5">
+
+    <style>
+        .map-container-section {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-container-section iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+    </style>
+
+    <!-- Section heading -->
+    <h2 class="h1-responsive font-weight-bold text-center my-5">Contactanos</h2>
+    <!-- Section description -->
+    <p class="text-center w-responsive mx-auto pb-5">
+        Somos una pequeña empresa que sin local que se encuentra en Nuevo Laredo, Tamaulipas, Mexico, hacemos envios a toda la Republica Mexicana
+    </p>
+
+    <!-- Grid row -->
+    <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-lg-5 mb-lg-0 mb-4">
+
+            <!-- Form with header -->
+            <div class="card">
+                <div class="card-body">
+                    <!-- Header -->
+                    <div class="form-header blue accent-1">
+                        <h3 class="mt-2"><i class="fas fa-envelope"></i> Escribenos:</h3>
+                    </div>
+                    <p class="dark-grey-text">Aunque respondemos más seguido en Facebook</p>
+                    <!-- Body -->
+                    <div class="md-form">
+                        <i class="fas fa-user prefix grey-text"></i>
+                        <input type="text" id="form-name" class="form-control">
+                        <label for="form-name">Tu nombre</label>
+                    </div>
+                    <div class="md-form">
+                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <input type="text" id="form-email" class="form-control">
+                        <label for="form-email">Tu Email</label>
+                    </div>
+                    <div class="md-form">
+                        <i class="fas fa-tag prefix grey-text"></i>
+                        <input type="text" id="form-Subject" class="form-control">
+                        <label for="form-Subject">Mensaje</label>
+                    </div>
+
+                    <div class="text-center">
+                        <button class="btn btn-light-blue">Enviar Mensaje</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Form with header -->
+
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-lg-7">
+
+            <!--Google map-->
+            <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28315.609792198436!2d-99.5205831!3d27.48633915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1607932542141!5m2!1ses-419!2smx" frameborder="0"
+                        style="border:0" allowfullscreen></iframe>
+            </div>
+            <!-- Buttons-->
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <a class="btn-floating blue accent-1">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </a>
+                    <p>Nuevo Laredo, Tamaulipas</p>
+                    <p class="mb-md-0">Mexico</p>
+                </div>
+                <div class="col-md-4">
+                    <a class="btn-floating blue accent-1">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <p>facebook.com/BeeKawaiiBzz</p>
+                    <p class="mb-md-0">Lun - Sabado, 8:00-22:00</p>
+                </div>
+                <div class="col-md-4">
+                    <a class="btn-floating blue accent-1">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <p>CatWave@gmail.com</p>
+                    <p class="mb-0">beekawai@gmail.com</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+</section>
+<!-- Section: Contact v.1 -->

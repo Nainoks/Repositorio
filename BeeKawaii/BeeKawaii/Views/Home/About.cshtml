@@ -1,0 +1,114 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<div class="about-section" >
+    <h1>Sobre nosotros</h1>
+    <p>Somos un grupo de amigos con un sueño en común</p>
+</div>
+<h2 style="text-align:center">Nuestro equipo</h2>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="~/Imagenes/Kat.jpg" alt="Jane" style="width:100%">
+            <div class="container">
+                <h2>Katia Padilla</h2>
+                <p class="title">CEO & Founder</p>
+                <p>Emprendedora y lider que se especializa en el</p> <p> servicio al cliente y en inversiones.</p>
+                <p>/KatMeowP</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="~/Imagenes/Meyi.jpg" alt="Mike" style="width:100%">
+            <div class="container">
+                <h2>Melissa Salazar</h2>
+                <p class="title">Art Director</p>
+                <p>Mente creativa que se dedica a hacer manualidades</p> <p> de toda clase y arte en su tiempo libre.</p>
+                <p>/melissa.salazarborquez</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="~/Imagenes/Adolfo.jpg" alt="John" style="width:100%">
+            <div class="container">
+                <h2>Adolfo García</h2>
+                <p class="title">Designer</p>
+                <p>El que hizo la pagina web, sisi, soy yo.</p>
+                <p>/AdolfoGc32</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+
+    }
+
+    html {
+        box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+    .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+    }
+
+    .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #ffe376;
+        color: black;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+        .container::after, .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+    .title {
+        color: grey;
+    }
+
+    .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+    }
+
+        .button:hover {
+            background-color: #555;
+        }
+</style>

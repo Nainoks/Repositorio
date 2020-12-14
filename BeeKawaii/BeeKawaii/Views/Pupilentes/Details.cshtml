@@ -1,0 +1,60 @@
+﻿@model BeeKawaii.Models.Pupilentes
+
+<h2>Pupilentes</h2>
+<style>
+    .responsive {
+        width: 100%;
+        height: auto;
+    }
+</style>
+
+<div class="container" id="product-section">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="~/Imagenes/SasukeUchiha.jpg" class="responsive" alt="Responsive image">
+        </div>
+        <div class="col-md-6">
+
+
+            <h1>@Html.DisplayFor(model => model.Modelo)</h1>
+
+            <h4>Color @Html.DisplayFor(model => model.Color)</h4>
+
+            <dt>
+                Precio
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PrecioVenta) $
+            </dd>
+            <div>
+
+                <hr />
+                <dl class="dl-horizontal">
+                    <dt>
+                        Tamaño del diametro (mm)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.TamañoDiametro)
+                    </dd>
+                    <dt>
+                       Tamaño de la pupila (mm)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.TamañoPupila)
+                    </dd>
+
+
+                </dl>
+            </div>
+
+        </div>
+    </div><!-- end row -->
+</div><!-- end container -->
+
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
